@@ -296,9 +296,9 @@ a {
 .img-tread {
     width: 100%;
     height: 100px;
-    background-image: url('https://raw.githubusercontent.com/yLeonardo99/Meus-Links/main/img/imgTenis.jpeg');
+    background-image: url('img/imgTenis.jpeg'); 
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
 }
