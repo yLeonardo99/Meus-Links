@@ -484,3 +484,133 @@ a {
     animation: pulse 3s infinite ease-in-out;
 }
 
+/****************** WIDGET 4 */
+.widget4 {
+    width: 100%;
+    height: 16%;
+    background-color: var(--color-green);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    padding: 1rem;
+}
+
+.meu-site {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .8rem;
+}
+
+.meu-site img {
+    width: 50px;
+    height: 50px;
+}
+
+.meu-site h1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-black);
+}
+
+/****************** WIDGET 5 */
+.widget5 {
+    width: 100%;
+    height: 16%;
+    background-color: var(--color-black);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 1rem;
+}
+
+.freelancer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .8rem;
+}
+
+.freelancer img {
+    width: 50px;
+    height: 50px;
+}
+
+.freelancer h1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-white);
+}
+
+/****************** WIDGET 6 */
+.widget6 {
+    width: 100%;
+    height: 32%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.widget6 span {
+    color: #fafafab4;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+/* ANIMAÇÕES */
+.widget1,
+.widget2,
+.tread,
+.box-social,
+.widget4,
+.widget5 {
+    transition: transform 0.3s ease;
+}
+
+.widget1:hover,
+.widget2:hover,
+.tread:hover,
+.box-social:hover,
+.widget4:hover,
+.widget5:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.meu-site img,
+.freelancer img {
+    animation: pulse 3s infinite ease-in-out;
+}
+
