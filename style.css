@@ -1,21 +1,18 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box ; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #151515;
+body, html {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    min-height: 100vh;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    height: 100%;
+    overflow: hidden; /* Evita rolagem desnecessária */
+    background-color: var(--color-background, #f0f0f0); /* Cor de fundo */
 }
 
 a {
@@ -94,8 +91,11 @@ a {
 
 .widget1 img {
     width: 100%;
+    max-width: 60px; /* Ajuste conforme necessário */
+    height: auto;
     border-radius: 8px;
 }
+
 
 .info-user {
     width: 80%;
@@ -109,10 +109,11 @@ a {
 
 .img-user {
     width: 60px;
-    height:100px;
+    height: 60px; 
     border-radius: 8px;
     border: 2px solid var(--color-green);
 }
+
 
 .name-user h1 {
     font-size: 1.2rem;
@@ -252,7 +253,6 @@ a {
 /****************** WIDGET 3 */
 
 .widget3 {
-    height: 100%;
     height: 32%;
     border-radius: 12px;
     display: flex;
@@ -260,6 +260,7 @@ a {
     justify-content: space-between;
     gap: 0.8rem;
 }
+
 
 .tread {
     border-radius: 12px;
@@ -614,3 +615,43 @@ a {
     animation: pulse 3s infinite ease-in-out;
 }
 
+/* Estilo padrão para telas grandes */
+@media (min-width: 769px) {
+    .widget4, .widget5, .widget6 {
+        height: 32%; /* Para telas maiores, widgets continuam menores */
+    }
+}
+
+/* Para tablets e iPads */
+@media (max-width: 768px) {
+    .widget4, .widget5, .widget6 {
+        height: 33.33%; /* Divide a tela em 3 partes iguais */
+        padding: 1rem;
+    }
+}
+
+/* Para smartphones */
+@media (max-width: 480px) {
+    .widget4, .widget5, .widget6 {
+        height: 33.33%; /* Preenche toda a altura */
+        padding: 0.5rem;
+    }
+
+    .meu-site img,
+    .freelancer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .meu-site h1,
+    .freelancer h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .widget1, .widget2, .widget3, .widget4, .widget5, .widget6 {
+        width: 100%;
+        height: auto; /* Ajuste para dispositivos menores */
+    }
+}
