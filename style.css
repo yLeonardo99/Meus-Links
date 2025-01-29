@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; /* Ativar o box-sizing para garantir que padding e border não afetem as dimensões dos elementos */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -13,6 +13,7 @@ body, html {
     height: 100%;
     overflow: hidden; /* Evita rolagem desnecessária */
     background-color: var(--color-background, #f0f0f0); /* Cor de fundo */
+    font-family: 'Roboto', sans-serif; /* Garantir que a fonte seja aplicada */
 }
 
 a {
@@ -56,20 +57,17 @@ a {
 }
 
 .container {
-    display: inline;
-    border-radius: 20px;
-    width: 95%;
-    max-width: 400px;
-    background-color: #000;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: .8rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
 }
 
 .content {
-    min-width: 320px;
     width: 100%;
+    max-width: 400px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -79,7 +77,7 @@ a {
 /****************** WIDGET 1 */
 .widget1 {
     width: 100%;
-    height: 16%;
+    height: auto;
     background-color: var(--color-black);
     border-radius: 12px;
     display: flex;
@@ -89,14 +87,13 @@ a {
 }
 
 .widget1 img {
-    width: 100%;
-    max-width: 60px; /* Ajuste conforme necessário */
-    height: auto;
+    width: 60px;
+    height: 60px;
     border-radius: 8px;
 }
 
 .info-user {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -139,7 +136,7 @@ a {
 /****************** WIDGET 2 */
 .widget2 {
     width: 100%;
-    height: 16%;
+    height: auto;
     background-color: var(--color-black);
     border-radius: 12px;
     padding: 1rem;
@@ -170,12 +167,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .skills-icons i {
     color: #fff;
     font-size: 1.4rem;
     transition: color 0.3s;
+    margin: 0.5rem;
 }
 
 .skills-icons i:hover {
@@ -247,11 +246,11 @@ a {
 }
 
 /****************** WIDGET 3 */
-
 .widget3 {
-    height: 32%;
+    height: auto;
     border-radius: 12px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 0.8rem;
@@ -260,8 +259,8 @@ a {
 .tread {
     border-radius: 12px;
     background-color: var(--color-black);
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,14 +298,10 @@ a {
     border-radius: 8px;
 }
 
-.img-tread img {
-    width: 50%;
-}
-
 .redes-sociais {
     border-radius: 12px;
-    width: 50%;
-    height: 185px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -318,9 +313,8 @@ a {
     background-color: var(--color-black);
     border-radius: 10px;
     width: 45%;
-    height: 45%;
+    height: 80px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -353,7 +347,7 @@ a {
 /****************** WIDGET 4 */
 .widget4 {
     width: 100%;
-    height: 16%;
+    height: auto;
     background-color: var(--color-green);
     border-radius: 12px;
     display: flex;
@@ -386,7 +380,7 @@ a {
 /****************** WIDGET 5 */
 .widget5 {
     width: 100%;
-    height: 16%;
+    height: auto;
     background-color: var(--color-black);
     border-radius: 12px;
     display: flex;
@@ -419,7 +413,7 @@ a {
 /****************** WIDGET 6 */
 .widget6 {
     width: 100%;
-    height: 32%;
+    height: auto;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -483,14 +477,14 @@ a {
 /* Estilo padrão para telas grandes */
 @media (min-width: 769px) {
     .widget4, .widget5, .widget6 {
-        height: 32%; /* Para telas maiores, widgets continuam menores */
+        height: auto; /* Para telas maiores, widgets continuam menores */
     }
 }
 
 /* Para tablets e iPads */
 @media (max-width: 768px) {
     .widget4, .widget5, .widget6 {
-        height: 33.33%; /* Divide a tela em 3 partes iguais */
+        height: auto; /* Divide a tela em 3 partes iguais */
         padding: 1rem;
     }
 }
@@ -498,7 +492,7 @@ a {
 /* Para smartphones */
 @media (max-width: 480px) {
     .widget4, .widget5, .widget6 {
-        height: 33.33%; /* Preenche toda a altura */
+        height: auto; /* Preenche toda a altura */
         padding: 0.5rem;
     }
 
