@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus links - Leonardo Cassiano│Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" type="image/jpeg" href="/img/imgAvatar.jpeg">
@@ -17,77 +18,82 @@
         <div id="loading-text">0%</div>
     </div>
 
-    <div class="container">
-        <div class="content">
-            <div class="widget1">
-                <div class="info-user">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <!-- Widget 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 widget1">
+                <div class="info-user d-flex align-items-center">
                     <div class="img-user">
-                        <img src="img/imgLeo3.jpeg" alt="user" ">
+                        <img src="img/imgLeo3.jpeg" alt="user" class="img-fluid rounded-circle">
                     </div>
-                    <div class="name-user">
+                    <div class="name-user ms-3">
                         <h1>Leonardo Cassiano</h1>
                         <span>Desenvolvedor Full Stack</span>
                     </div>
                 </div>
-                <div class="info-icon">
+                <div class="info-icon text-center">
                     <img src="img/smile-icon.png" alt="icon">
                 </div>
             </div>
-            <div class="widget2">
+
+            <!-- Widget 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 widget2">
                 <div class="hard-skills">
                     <span class="destaque">Hard Skills</span>
-                    <div class="skills-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-bootstrap"></i>
-                        <i class="fab fa-sass"></i> 
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-php"></i>
-                        <i class="fab fa-java"></i>
-                        <i class="fas fa-database"></i>
-                        <i class="fab fa-wix"></i>
-                        <i class="fab fa-wordpress"></i> 
-                        <i class="fab fa-figma"></i>
+                    <div class="skills-icons d-flex flex-wrap justify-content-center">
+                        <i class="fab fa-html5 m-2"></i>
+                        <i class="fab fa-css3-alt m-2"></i>
+                        <i class="fab fa-js m-2"></i>
+                        <i class="fab fa-bootstrap m-2"></i>
+                        <i class="fab fa-sass m-2"></i>
+                        <i class="fab fa-react m-2"></i>
+                        <i class="fab fa-node m-2"></i>
+                        <i class="fab fa-php m-2"></i>
+                        <i class="fab fa-java m-2"></i>
+                        <i class="fas fa-database m-2"></i>
+                        <i class="fab fa-github m-2"></i>
+                        <i class="fab fa-git-alt m-2"></i>
+                        <i class="fab fa-wix m-2"></i>
+                        <i class="fab fa-wordpress m-2"></i>
+                        <i class="fab fa-figma m-2"></i>
                     </div>
                 </div>
             </div>
-            <div class="widget3">
-                <a href="https://www.instagram.com/p1csleo99/" target="_blank" class="tread">
+
+            <!-- Widget 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 widget3">
+                <a href="https://www.instagram.com/p1csleo99/" target="_blank" class="tread d-block text-center">
                     <div class="text-tread">
                         <h1>Meu Hobby 🎾</h1>
-                        <span>  
-                        @p1csleo99
-                        </span>
+                        <span>@p1csleo99</span>
                     </div>
-                    <div class="img-tread"></div>
                 </a>
-                <div class="redes-sociais">
-                    <a class="box-social tiktok" href="https://www.tiktok.com/@yleonardo99" target="_blank"><i
-                            class="fab fa-tiktok"></i></a>
-                    <a class="box-social instagram" href="https://www.instagram.com/p1csleo99/"target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                    <a class="box-social github" href="https://github.com/yLeonardo99"target="_blank"><i
-                            class="fab fa-github"></i></a>
-                    <a class="box-social linkedin" href="https://www.linkedin.com/in/leonardo-cassiano-435b62257/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a>
+                <div class="redes-sociais d-flex justify-content-center mt-3">
+                    <a class="box-social tiktok me-2" href="https://www.tiktok.com/@yleonardo99" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a class="box-social instagram me-2" href="https://www.instagram.com/p1csleo99/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="box-social github me-2" href="https://github.com/yLeonardo99" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="box-social linkedin me-2" href="https://www.linkedin.com/in/leonardo-cassiano-435b62257/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="widget4">
-                <a href="https://yleonardo99.github.io/Meu-Portfolio/" class="meu-site" target="_blank">
-                    <img src="img/favicon-rmdev.ico" alt="web">
+
+            <!-- Widget 4 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 widget4">
+                <a href="https://yleonardo99.github.io/Meu-Portfolio/" class="meu-site d-block text-center" target="_blank">
+                    <img src="img/web-black-icon.png" alt="web" class="img-fluid">
                     <h1>Meu site portfolio</h1>
                 </a>
             </div>
-            <div class="widget6">
+
+            <!-- Widget 6 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 widget6 mt-4">
                 <span>Estou escutando...</span>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1Zo3kI" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            
         </div>
     </div>
 
     <script src="animationLoading.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
